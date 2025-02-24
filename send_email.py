@@ -1,4 +1,4 @@
-import yagmail
+import yagmail 
 
 # Email credentials (Use environment variables for security!)
 SENDER_EMAIL = os.getenv("SENDER_EMAIL")

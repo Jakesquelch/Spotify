@@ -1,5 +1,6 @@
 import os
 import spotipy
+import subprocess
 from dotenv import load_dotenv
 from spotipy.oauth2 import SpotifyOAuth
 import pandas as pd
@@ -58,3 +59,4 @@ Weekly Spotify Summary:
 """ + "\n".join([f"{song} - {count} times" for song, count in song_counts.items()])
 
 print(summary)
+subprocess.run(["python3", "send_email.py"])
