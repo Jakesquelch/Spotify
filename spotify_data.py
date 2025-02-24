@@ -1,8 +1,12 @@
 import os
 import spotipy
+from dotenv import load_dotenv
 from spotipy.oauth2 import SpotifyOAuth
 import pandas as pd
 from collections import Counter
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Set up authentication
 SPOTIPY_CLIENT_ID = os.getenv("SPOTIPY_CLIENT_ID")
