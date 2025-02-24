@@ -1,9 +1,9 @@
 import yagmail
 
 # Email credentials (Use environment variables for security!)
-SENDER_EMAIL = "your_email@gmail.com"
-SENDER_PASSWORD = "your_email_password"
-RECEIVER_EMAIL = "your_email@gmail.com"
+SENDER_EMAIL = os.getenv("SENDER_EMAIL")
+SENDER_PASSWORD = os.getenv("SENDER_PASSWORD")
+RECEIVER_EMAIL = os.getenv("RECEIVER_EMAI")
 
 subject = "🎵 Your Weekly Spotify Stats"
 body = summary  # This is from the previous script
